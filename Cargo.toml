@@ -1,0 +1,21 @@
+[package]
+name = "rustyllama"
+version = "0.1.0"
+edition = "2021"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+ollama-rs = {version = "0.1.9", features = ["stream"]}
+whisper-rs = "0.11.1"
+cpal = "0.15.3"
+anyhow = "1.0.86"
+ringbuf = "0.4.4"
+
+
+
+
